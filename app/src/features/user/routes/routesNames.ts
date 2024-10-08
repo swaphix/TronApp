@@ -1,0 +1,17 @@
+export const routesNamesApp = {
+  homePage: '/app/',
+  newTransactionPage: '/app/nueva-transacción',
+  detailTransaction: '/app/transacción/:parameter',
+  detailTransactionOnlyName: '/app/transacción',
+  newTransactionManualPage: '/app/nueva-transacción-manual',
+  balance: '/app/balance/',
+  history: '/app/historial/',
+  settings: '/app/configuracion/',
+  wallet: '/app/wallet',
+  messagetransactionSuccessPage:'/app/success-transacción/',
+  newConversion: '/app/convertir/',
+  newConversionManual: '/app/convertir/',
+  transferCrypto: '/app/transferencia/',
+  changeEmail: '/app/change-email',
+  changePassword: '/app/change-password',
+}

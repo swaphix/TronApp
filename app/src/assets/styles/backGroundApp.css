@@ -1,0 +1,31 @@
+.body-back-ground{
+    background-image: url(../images/swaphix_background_2.png);
+    background-repeat: repeat;
+    /* background-repeat: no-repeat; */
+    background-position: 20px 20px;
+    background-color: #40006A;
+    background-position:0px 0px;
+    /* background-size: cover; */
+    background-position: center; 
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 100vh;
+    width:100vw;
+}
+
+.container-body{
+    /* width: 50%; */
+    height: calc(100vh - 20px);
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 48rem){
+    .body-back-ground{
+        background-image: none;
+        background-color: #ffffff;
+    }
+    
+}

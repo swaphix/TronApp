@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  
+  .titleTxt{
+      @apply text-2xl font-bold text-grayBold text-center my-0 px-0;
+  }
+  .subtitleTxt{
+    @apply text-lg font-bold text-grayBold text-center my-0 px-0;
+  }
+  .splashTxt{
+    @apply text-2xl font-bold text-globalWhite text-center;
+  }
+  .splashTxtSecond{
+    @apply text-sm w-full  text-globalWhite;
+  }
+  .labelTxt{
+    @apply text-xs  font-bold text-black;
+  }
+  .sectionTxt{
+    @apply  text-base font-bold text-black;
+  }
+  .noteTxt{
+    @apply text-xs text-black text-justify;
+  }
+  .legendTxt{
+    @apply text-xs text-black italic;
+  }
+  .phraseTxt{
+    @apply text-sm text-black;
+  }
+  .errorTxt{
+    @apply text-error text-start m-0 text-left text-xs p-0;
+}
+  .legalLabelL{
+    @apply underline underline-offset-auto text-grayBold text-sm text-right;
+  }
+  .link{
+    @apply underline  text-purple cursor-pointer;
+  }
+  .legalLabelR{
+    @apply underline underline-offset-auto text-grayBold text-sm text-left;
+  }
+  .socialIconL{
+    @apply  h-4 ml-auto;
+  }
+  .socialIconR{
+    @apply  h-4 mr-auto;
+  }
+  .button{
+    @apply p-2 my-4 bg-purple rounded-lg text-globalWhite font-bold ;
+  }
+  .textButton
+  {
+    @apply  font-bold text-purple text-lg text-center underline cursor-pointer;
+  }
+  .menuButton{
+    @apply w-full p-8 my-4 bg-splash hover:bg-purple focus:bg-purple active:bg-purple text-globalWhite font-medium text-2xl;
+  }
+  .button-disabled{
+    @apply p-2 my-4 bg-grayMedium rounded-lg text-globalWhite font-bold;
+  }
+  .fileButton{
+    @apply p-2 bg-purple rounded-xl text-globalWhite text-sm;
+  }
+  .buttonForm{
+    @apply w-full p-2 my-4 bg-purple rounded-lg text-globalWhite font-bold;
+  }
+  .buttonLogin{
+    @apply px-8 py-2  bg-gradient-to-b from-pink to-purple rounded-lg text-globalWhite font-bold float-right;
+  }
+  .droplistF{
+    @apply py-2 float-right w-full rounded-md border-purple box-border border font-bold text-black text-sm focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple;
+  }
+  .droplistP{
+    @apply  float-right w-2/3 rounded-md border-purple box-border border font-bold text-black text-sm focus:outline-none focus:border-purple focus:ring-1 focus:ring-purple;
+  }
+  .inputNumber{
+    @apply w-full py-2  rounded-md border-purple focus:outline-none focus:border-purple box-border border focus:ring-1 focus:ring-purple my-0 ;
+  }
+
+  .inputNumberError{
+    @apply w-full rounded-md border-error focus:outline-none focus:border-error box-border border focus:ring-1 focus:ring-error my-2 ;
+  }
+  .inputTextAreaWallet{
+    @apply w-full rounded-lg bg-grayLow focus:outline-none focus:border-grayLow  focus:ring-1 focus:ring-grayLow my-0 min-h-full px-4 disabled:border-none resize-none;
+  }
+  .inputTextArea{
+    @apply w-full rounded-lg border-purple focus:outline-none focus:border-purple  focus:ring-1 focus:ring-grayLow my-0 min-h-full px-4 disabled:border-none resize-none;
+  }
+  .detailBox{
+    @apply rounded-lg border-purple box-border border my-2 p-5;
+  }
+  .toggleIcon
+  {
+    @apply absolute top-2 right-3 z-50 cursor-pointer;
+  }
+
+  .desktop-option-side-bar
+  {
+    @apply text-grayBold  font-bold mx-5 text-base  cursor-pointer not-italic  hover:text-purple 
+  
+  }
+  .desktop-option-side-bar i
+  {
+    @apply not-italic
+  
+  }
+
+  /* TOGGLE SWITCH */
+  /* .switch-button {
+    display: inline-block;
+  }
+  .switch-button .switch-button__checkbox {
+    display: none;
+} */
+/* .switch-button .switch-button__label {
+    background-color: rgb(189, 189, 189);
+    width: 50px;
+    height:25px;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+} */
+/* .switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #54b9a1;
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 2px white;
+} */
+.containerSwitch{
+  @apply  bg-gradient-to-b from-pink to-purple rounded-lg text-globalWhite font-bold float-right;
+}
+.containerSwitchDisabled{
+  @apply  bg-gradient-to-b from-grayHigh to-grayHigh rounded-lg text-globalWhite font-bold float-right;
+}
+.container-fatter-switch-ine{
+  @apply  flex flex-row justify-between  flex flex-row p-1 justify-between items-center w-full left-0
+}
+
+/* .switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: white;
+} */
+/* .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(1.5rem);
+} */
+
+/* SIDEBAR */
+.p-sidebar{
+  background:  #B13CFF !important;
+}
+.sidebar-container {
+  z-index: 999999; 
+  position: relative;
+  width: 100%;
+}
+.p-sidebar-content{
+  @apply w-full bg-splash
+}
+/* .p-sidebar-full .p-sidebar{ */
+  /* background-color:  bg-splash; */
+  /* @apply  bg-purple */
+
+/* } */
+
+/* .p-sidebar-active{ */
+  /* @apply  bg-purple */
+/* } */
+
+.item-main{
+  @apply  bg-splash  py-8 w-screen text-center
+}
+
+.item-main-select{
+  @apply  bg-purple  px-8  py-8 w-screen text-center
+
+}
+.item-main-select p{
+  @apply text-globalWhite
+
+}
+
+.item-main p{
+  @apply text-globalWhite
+}
+
+.container-side-main{
+  @apply bg-purple w-full h-full
+}
+
+
+
+}
